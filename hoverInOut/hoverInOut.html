@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hover</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+
+    <style>
+        .pic{
+            width: 20%;
+            height: 10%;
+            margin: 2.4%;
+        }
+    </style>
+</head>
+<body>
+    <img class="pic" src="2.png" alt="3.png">
+    <img class="pic" src="3.png" alt="2.png">
+    <img class="pic" src="2.png" alt="3.png">
+    <img class="pic" src="3.png" alt="2.png">
+    <!-- <img class="pic" src="0.jpg" alt="">
+    <img class="pic" src="2.png" alt="">
+    <img class="pic" src="3.png" alt="">
+    <img class="pic" src="01.jpg" alt=""> -->
+
+    <script>
+        $('.pic').hover(
+            function(){
+                console.log("home"),
+                $(this).attr("src", $(this).attr("alt")); 
+
+            },
+            function(){
+                console.log('town'),
+                $(this).attr("alt", $(this).attr("src"));
+            //it's not changing back
+            });
+
+    </script>
+</body>
+</html>

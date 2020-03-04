@@ -1,0 +1,94 @@
+*{
+    padding: 0%;
+    background: none;
+    margin: 0%;
+    box-sizing: border-box;
+    /* outline: 1px dotted black; */
+
+
+}
+
+.body{
+    width: 50%;
+    margin: 500px;
+    border: 2px solid black;
+    /* background: grey; */
+}
+
+#info{
+    
+    background: grey;
+    /* height: 100px; */
+    /* margin: 0px; */
+    /* border: 1.5px solid black; */
+   
+
+}
+
+.mag{
+    font-size: 20px;
+    padding: 0px 20px;
+    /* margin-left: 30px; */
+}
+
+.material-icons{
+    font-size: 60px;
+    background: grey;
+}
+
+.my{
+    font-size: 20px;
+    /* width: 100px; */
+}
+.right{
+    display: inline-block;
+    text-align: right;
+    /* margin-left: 200px; */
+}
+
+.main{
+    padding: 30px;
+    margin: 0px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.addclassbut{
+    display: inline-block;
+    padding: 0px 30px;
+    box-shadow: 3px 3px;
+    /* margin: 0px 40px; */
+
+}
+
+.click{
+    font-size: 15px;
+}
+
+.bigadd{
+    display: inline-block;
+}
+
+.center{
+    background: balck;
+    padding-left: 200px;
+    /* display: block; */
+    text-align: center;
+
+}
+
+.link{
+    text-decoration: none;
+}
+
+.hr{
+    height: 2px;
+    display: block;
+    border-style: inset;
+    background-color: black;
+}
+
+.bottom{
+    text-align: right;
+    background: grey;
+}

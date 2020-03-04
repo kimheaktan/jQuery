@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <style>
+        .pic{
+            display: block;
+            margin: 0.1%;
+        }
+
+        .main{
+            width: 50%;
+            float: right;
+        }
+    </style>
+    <title>Ninja</title>
+    <script>
+        $(document).ready(function(){
+            $('img').click(function() {
+            $(this).attr("src", $(this).attr("new-src"));
+});
+
+//         $('img').click(function() {
+//             $(this).attr("src", "http://saku78.com/wp-content/uploads/2015/09/goals.jpg");
+// // });
+        });
+    </script>
+</head>
+<body>
+    <div class="main">
+        <img class="pic" src="ninja0.png" new-src="cat0.png">
+        <img class="pic" src="ninja1.png" new-src="cat1.png">
+        <img class="pic" src="ninja2.png" new-src="cat2.png">
+        <img class="pic" src="ninja3.png" new-src="cat3.png">
+        <img class="pic" src="ninja4.png" new-src="cat4.png">
+    </div>
+    
+    <script>
+
+
+
+    </script>
+</body>
+</html>
+

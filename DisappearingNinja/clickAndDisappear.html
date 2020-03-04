@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <title>Click and Disappear</title>
+    <style type="text/css">
+        .pic{
+            width: 20%;
+            margin: 2.4%;
+        }
+
+        .reset{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2>Make it disappear when clicked!</h2>
+    <button class="reset">Reset</button>
+    <img class="pic" src="pic.png" alt="">
+    <img class="pic" src="pic.png" alt="">
+    <img class="pic" src="pic.png" alt="">
+    <img class="pic" src="pic.png" alt="">
+    <img class="pic" src="pic.png" alt="">
+    <img class="pic" src="pic.png" alt="">
+    <img class="pic" src="pic.png" alt="">
+    <img class="pic" src="pic.png" alt="">
+
+
+
+    <script>
+        $('img').click(function(){
+            $(this).hide();
+        });
+
+        $('button').click(function(){
+            $('img').show();
+        });
+    </script>
+</body>
+</html>
