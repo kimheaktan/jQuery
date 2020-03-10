@@ -27,15 +27,17 @@
     <img class="pic" src="01.jpg" alt=""> -->
 
     <script>
-        $('.pic').hover(
+        $('.pic').mouseover(
             function(){
                 console.log("home"),
                 $(this).attr("src", $(this).attr("alt")); 
 
-            },
-            function(){
-                console.log('town'),
-                $(this).attr("alt", $(this).attr("src"));
+            // },
+            // function(){
+            //     console.log('town'),
+            //     // $(this).attr("alt", $(this).attr("src"));
+            //     $(this).attr("src"  );
+
             //it's not changing back
             });
 
