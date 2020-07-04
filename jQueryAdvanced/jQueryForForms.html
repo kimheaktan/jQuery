@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    //return false doesn't allow the page to the action(wherever) and refresh
+    //.submit works in two ways 1/ listener 2/ used to hard submit
+    //serialize prep froms being handled by a computer
+    $(document).ready(function(){
+        // alert("Welcome");
+        $('#form1').submit(function(){
+            alert("you're submitting me!");
+            return false // return false doesn't allow the page to the action(wherever) and refresh
+        });
+        $('.BtnOutSideForm').click(function(){
+            alert("submitting from the outside button");
+            $('#form1').submit();
+            return false //if we don't want the form to submit
+
+        });
+    });
+
+    </script>
+</head>
+<body>
+    <form id="form1" action="somewhere.com" method="post">
+        First Name<input type='text' name='first_name'>
+        Last Name<input type='text' name='last_name'>
+        Email<input type='text' name='email'>
+        <input type="submit" value="Sumit">
+    </form>
+
+    <button class="BtnOutSideForm">Click me to submit the form differently. I can submit the form though I am outside the form</button>
+</body>
+</html>

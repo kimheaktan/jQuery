@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        //     $(".alert").click(function(){
+        //         alert('you clicked me');
+        //     });
+
+            $(".new_btn").click(function(){
+                $("#buttons").append("<button class='alert'>I am dynamically rendered.</button>");//dynamically generated contents are given class .alert
+                // single quotes for class on the dynamically generated button because it's inside double qoutes
+            });
+
+        // $document.on()  is handler that looks for anything with class alert anytime on the document including dynamically generated content. it always listen for event
+        $(document).on("click", ".alert", function(){
+            alert("you clicked me.");
+        });
+    });
+    </script>
+</head>
+<body>
+    <h3>Static Content</h3>
+    <div>
+        <button class="alert">click me for a message</button>
+        <button class="new_btn">click me to add a new button</button>
+    </div>
+    <h3>Dynamically rendered content</h3>
+    <div id="buttons"></div>
+</body>
+</html>
